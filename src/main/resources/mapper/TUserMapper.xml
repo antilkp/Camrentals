@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kpeee.camrentals.mapper.TUserMapper">
+
+    <resultMap id="BaseResultMap" type="com.kpeee.camrentals.entity.TUser">
+            <id property="user_id" column="user_id" jdbcType="INTEGER"/>
+            <result property="user_phone" column="user_phone" jdbcType="VARCHAR"/>
+            <result property="user_email" column="user_email" jdbcType="VARCHAR"/>
+            <result property="uesr_name" column="uesr_name" jdbcType="VARCHAR"/>
+            <result property="user_password" column="user_password" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,user_phone,user_email,
+        uesr_name,user_password
+    </sql>
+</mapper>
